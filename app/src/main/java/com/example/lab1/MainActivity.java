@@ -2,9 +2,12 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,4 +37,14 @@ public class MainActivity extends AppCompatActivity {
         } else {
             this.tvright.setText("Pakeista");
         }}
+
+    public void on2ButtonClick(View view) {
+        Random rand = new Random();
+        int randomRed = rand.nextInt(255);
+        int randomBlue = rand.nextInt(255);
+        int randomGreen = rand.nextInt(255);
+        this.tvleft.setTextColor(Color.rgb(randomRed, randomGreen, randomBlue));
+        this.tvright.setTextColor(Color.rgb(randomRed, randomGreen, randomBlue));
+
+    }
 }

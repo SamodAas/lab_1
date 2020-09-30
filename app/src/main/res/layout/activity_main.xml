@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bpakeist"
+        android:id="@+id/bChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sukeisti"
@@ -41,5 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textright"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kita Spalva"
+        android:onClick="on2ButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/bChangeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
